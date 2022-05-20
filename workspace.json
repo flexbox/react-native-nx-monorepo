@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "mobile": "apps/mobile",
-    "mobile-e2e": "apps/mobile-e2e"
+    "mobile-e2e": "apps/mobile-e2e",
+    "next": "apps/next",
+    "next-e2e": "apps/next-e2e"
   }
 }
