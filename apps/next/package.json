@@ -1,0 +1,15 @@
+{
+  "name": "next",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "native-base": "*",
+    "react-native-web": "*"
+  },
+  "devDependencies": {
+    "@expo/next-adapter": "*",
+    "next-compose-plugins": "*",
+    "next-fonts": "*",
+    "next-transpile-modules": "*"
+  }
+}
