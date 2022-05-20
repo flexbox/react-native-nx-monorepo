@@ -58,6 +58,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+Pods/
 
 # Android/IntelliJ
 #
