@@ -2,33 +2,34 @@
 
 This project was generated using [Nx](https://nx.dev).
 
-## Adding capabilities to your workspace
-
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
-
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
-
-Below are our core plugins:
-
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
-
-There are also many [community plugins](https://nx.dev/community) you could add.
-
 ## Getting Started
 
 ```console
 yarn
 nx run-ios mobile
 nx run-android mobile
-nx serve next
+nx serve web
 ```
+
+## Apps
+
+- [`/web`](./apps/web/) with [https://nx.dev/packages/react](https://nx.dev/packages/react)
+- [`/mobile`](./apps/mobile) with [https://nx.dev/packages/react-native](https://nx.dev/packages/react-native)
+
+## Tooling
+
+- [NativeBase](https://docs.nativebase.io/)
+
+## Adding capabilities to your workspace
+
+Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+
+Below are our core plugins:
+
+- [React](https://reactjs.org): `npm install --save-dev @nrwl/react`
+- [Express](https://expressjs.com): `npm install --save-dev @nrwl/express`
+
+There are also many [community plugins](https://nx.dev/community) you could add.
 
 ## Generate an application
 
