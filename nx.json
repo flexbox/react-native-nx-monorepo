@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "happynrwl",
+  "npmScope": "react-native-nx-monorepo",
   "affected": {
     "defaultBase": "main"
   },
