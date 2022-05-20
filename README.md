@@ -21,6 +21,15 @@ Below are our core plugins:
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 
+## Getting Started
+
+```console
+yarn
+nx run-ios mobile
+nx run-android mobile
+nx serve next
+```
+
 ## Generate an application
 
 Run `nx g @nrwl/react:app my-app` to generate an application.

@@ -11,10 +11,12 @@
   "dependencies": {
     "@nrwl/next": "14.1.7",
     "core-js": "^3.6.5",
+    "native-base": "^3.4.5",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.68.1",
+    "react-native-safe-area-context": "^4.2.5",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.3.0"
   },
@@ -66,7 +68,7 @@
     "nx": "14.1.7",
     "prettier": "^2.5.1",
     "react-native-config": "1.4.5",
-    "react-native-svg": "12.3.0",
+    "react-native-svg": "^12.3.0",
     "react-native-svg-transformer": "1.0.0",
     "react-test-renderer": "18.0.0",
     "ts-jest": "27.1.4",
