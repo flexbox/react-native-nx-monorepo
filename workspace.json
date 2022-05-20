@@ -4,7 +4,7 @@
   "projects": {
     "mobile": "apps/mobile",
     "mobile-e2e": "apps/mobile-e2e",
-    "next": "apps/next",
-    "next-e2e": "apps/next-e2e"
+    "web": "apps/web",
+    "web-e2e": "apps/web-e2e"
   }
 }

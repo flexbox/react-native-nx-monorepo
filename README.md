@@ -36,6 +36,7 @@ nx serve next
 - https://nx.dev/packages/react-native
 
 
+
 ## Generate an application
 
 Run `nx g @nrwl/react:app my-app` to generate an application.
