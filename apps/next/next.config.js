@@ -1,14 +1,4 @@
-const reactWebpackConfig = require('@nrwl/react/plugins/webpack');
 const withNx = require('@nrwl/next/plugins/with-nx');
-const { withExpo } = require('@expo/next-adapter');
-const withFonts = require('next-fonts');
-const withPlugins = require('next-compose-plugins');
-const withTM = require('next-transpile-modules')([
-  'react-native-web',
-  'react-native-svg',
-  'native-base',
-  'react-native-svg',
-]);
 
 /**
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
@@ -19,26 +9,34 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-  webpack: (config, options) => {
-    config = reactWebpackConfig(config);
-    let reactNativeKey = config.resolve.alias['react-native'];
-    if (!reactNativeKey) {
-      config.resolve.alias['react-native'] = 'react-native-web';
-      config.resolve.alias['react-native$'] = 'react-native-web';
-      config.resolve.extensions.unshift('.web.js');
-    }
-    return config;
-  },
 };
 
+const { withNativebase } = require('@native-base/next-adapter');
+const path = require('path');
+
 module.exports = withNx(
-  withPlugins(
-    [
-      withTM,
-      [withFonts, { projectRoot: __dirname }],
-      [withExpo, { projectRoot: __dirname }],
-      // your plugins go here.
-    ],
-    nextConfig
-  )
+  withNativebase({
+    dependencies: ['@native-base/icons', 'react-native-web-linear-gradient'],
+    nextConfig: {
+      webpack: (config, options) => {
+        config.module.rules.push({
+          test: /\.ttf$/,
+          loader: 'url-loader', // or directly file-loader
+          include: path.resolve(__dirname, 'node_modules/@native-base/icons'),
+        });
+        config.resolve.alias = {
+          ...(config.resolve.alias || {}),
+          'react-native$': 'react-native-web',
+          'react-native-linear-gradient': 'react-native-web-linear-gradient',
+        };
+        config.resolve.extensions = [
+          '.web.js',
+          '.web.ts',
+          '.web.tsx',
+          ...config.resolve.extensions,
+        ];
+        return config;
+      },
+    },
+  })
 );
