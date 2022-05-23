@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -58,9 +59,11 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-react-hooks": "4.5.0",
+    "husky": ">=6",
     "jest": "27.5.1",
     "jest-circus": "27.5.1",
     "jest-react-native": "18.0.0",
+    "lint-staged": ">=10",
     "metro": "0.70.2",
     "metro-babel-register": "0.70.2",
     "metro-react-native-babel-preset": "0.70.2",
@@ -74,5 +77,9 @@
     "ts-jest": "27.1.4",
     "ts-node": "9.1.1",
     "typescript": "~4.6.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{js,ts,tsx,css,md}": "prettier --write"
   }
 }
