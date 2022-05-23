@@ -1729,7 +1729,7 @@
     webpack "^5.58.1"
     webpack-merge "^5.8.0"
 
-"@nrwl/storybook@14.1.7":
+"@nrwl/storybook@14.1.7", "@nrwl/storybook@^14.1.7":
   version "14.1.7"
   resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-14.1.7.tgz#a73c2641a277c3f77e5347447b3d30adff04d8b0"
   integrity sha512-sFtvzkx5y//4ANNhYuJ6Sc0CR1v2SIuk72OFtwleXBRWH6fpOx13qHjv/afov4WqWVnyuEcCMBI+h2AudC6jdg==
