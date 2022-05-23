@@ -7,6 +7,7 @@
 
 - Monorepo generated using [Nx](https://nx.dev/getting-started/intro)
 - UI design with [NativeBase](https://docs.nativebase.io/)
+- Design system with [Storybook](https://nx.dev/storybook/overview-react#storybook)
 
 ## Getting Started
 
@@ -15,6 +16,8 @@ yarn
 nx run-ios mobile
 nx run-android mobile
 nx serve web
+nx run mobile:storybook
+nx run web:storybook
 ```
 
 ## Apps
