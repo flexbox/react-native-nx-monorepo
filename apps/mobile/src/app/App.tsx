@@ -5,7 +5,7 @@ import { ScrollView, NativeBaseProvider } from 'native-base';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { InterfaceScrollViewProps } from 'native-base/lib/typescript/components/basic/ScrollView/types';
 
-import { LocationList } from '@react-native-nx-monorepo/shared-ui';
+import { LocationList, Tabs } from '@react-native-nx-monorepo/shared-ui';
 
 export const App = () => {
   const scrollViewRef = useRef<null | InterfaceScrollViewProps>(null);
@@ -22,6 +22,7 @@ export const App = () => {
             contentInsetAdjustmentBehavior="automatic"
             backgroundColor="gray.100"
           >
+            <Tabs />
             <LocationList />
           </ScrollView>
         </SafeAreaView>
