@@ -1,8 +1,8 @@
-import { Text } from 'react-native';
 import React from 'react';
+import { Text } from 'react-native';
 
 import { Button } from 'native-base';
-import { Card } from 'libs/shared-ui/src/components/Card';
+import { Card } from '@react-native-nx-monorepo/shared-ui';
 
 const ALL_LOCATIONS = [
   {

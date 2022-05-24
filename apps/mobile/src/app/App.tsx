@@ -11,8 +11,8 @@ export const App = () => {
   const scrollViewRef = useRef<null | InterfaceScrollViewProps>(null);
 
   return (
-    <SafeAreaProvider>
-      <NativeBaseProvider>
+    <NativeBaseProvider>
+      <SafeAreaProvider>
         <StatusBar barStyle="dark-content" />
         <SafeAreaView>
           <ScrollView
@@ -25,9 +25,7 @@ export const App = () => {
             <LocationList />
           </ScrollView>
         </SafeAreaView>
-      </NativeBaseProvider>
-    </SafeAreaProvider>
+      </SafeAreaProvider>
+    </NativeBaseProvider>
   );
 };
-
-export default App;

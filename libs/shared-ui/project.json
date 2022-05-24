@@ -18,6 +18,31 @@
         "jestConfig": "libs/shared-ui/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "storybook": {
+      "executor": "@nrwl/react-native:storybook",
+      "options": {
+        "searchDir": "libs/shared-ui",
+        "outputFile": "./.storybook/story-loader.js",
+        "pattern": "**/*.stories.@(js|jsx|ts|tsx|md)",
+        "silent": false
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/react",
+        "outputPath": "dist/storybook/shared-ui",
+        "config": {
+          "configFolder": "libs/shared-ui/.storybook"
+        }
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
     }
   }
 }
