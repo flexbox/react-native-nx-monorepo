@@ -3,10 +3,16 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "reinstall": "rm -rf node_modules && rm yarn.lock && yarn",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
     "prepare": "husky install",
+    "ios:start": "nx run-ios mobile",
+    "android:start": "nx run-android mobile",
+    "mobile:lint": "nx lint mobile",
+    "mobile:storybook": "nx run mobile:storybook",
+    "web:start": "nx serve web",
     "web:storybook": "nx run web:storybook",
     "cache:clear": "nx reset"
   },
