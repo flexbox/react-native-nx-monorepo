@@ -13,7 +13,7 @@ export const Card = ({ children, title }: CardProps) => {
   return (
     <>
       {title && <ListTitle title={title} />}
-      <Flex p={4} m={2} borderRadius="3xl" shadow={4}>
+      <Flex p={4} m={2} borderRadius="3xl" shadow={4} backgroundColor="white">
         {children}
       </Flex>
     </>
