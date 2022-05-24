@@ -1,11 +1,12 @@
 import { Button, NativeBaseProvider } from 'native-base';
 import NxWelcome from './nx-welcome';
+import { LocationList } from '@react-native-nx-monorepo/shared-ui';
 
 export function App() {
   return (
     <NativeBaseProvider>
       <NxWelcome title="web" />
-      <Button>Hello Native Base</Button>
+      <LocationList />
       <div />
     </NativeBaseProvider>
   );

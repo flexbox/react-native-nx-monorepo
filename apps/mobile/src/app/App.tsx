@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
 import { StatusBar } from 'react-native';
-import { LocationList } from '../components/LocationList';
 
 import { ScrollView, NativeBaseProvider } from 'native-base';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { InterfaceScrollViewProps } from 'native-base/lib/typescript/components/basic/ScrollView/types';
+
+import { LocationList } from '@react-native-nx-monorepo/shared-ui';
 
 export const App = () => {
   const scrollViewRef = useRef<null | InterfaceScrollViewProps>(null);

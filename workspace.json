@@ -4,6 +4,7 @@
   "projects": {
     "mobile": "apps/mobile",
     "mobile-e2e": "apps/mobile-e2e",
+    "shared-ui": "libs/shared-ui",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e"
   }

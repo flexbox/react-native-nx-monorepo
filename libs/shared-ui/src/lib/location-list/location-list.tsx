@@ -1,7 +1,8 @@
 import { Text } from 'react-native';
 import React from 'react';
-import { Card } from 'apps/mobile/src/components/Card';
+
 import { Button } from 'native-base';
+import { Card } from 'libs/shared-ui/src/components/Card';
 
 const ALL_LOCATIONS = [
   {
