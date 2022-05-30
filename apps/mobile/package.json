@@ -11,6 +11,8 @@
     "react-native-safe-area-context": "*",
     "react-native-svg": "*",
     "react-native": "*",
-    "react": "*"
+    "react": "*",
+    "@storybook/react": "*",
+    "@storybook/react-native": "*"
   }
 }

@@ -1,8 +1,7 @@
 import React from 'react';
 import type { ReactNode } from 'react';
 import { Flex } from 'native-base';
-
-import { ListTitle } from './ListTitle';
+import { ListTitle } from '@react-native-nx-monorepo/shared-ui';
 
 interface CardProps {
   children: ReactNode;

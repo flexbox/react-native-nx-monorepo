@@ -1,17 +1,18 @@
 import React, { useRef } from 'react';
 import { StatusBar } from 'react-native';
-import { LocationList } from '../components/LocationList';
 
 import { ScrollView, NativeBaseProvider } from 'native-base';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { InterfaceScrollViewProps } from 'native-base/lib/typescript/components/basic/ScrollView/types';
 
+import { LocationList, Tabs } from '@react-native-nx-monorepo/shared-ui';
+
 export const App = () => {
   const scrollViewRef = useRef<null | InterfaceScrollViewProps>(null);
 
   return (
-    <SafeAreaProvider>
-      <NativeBaseProvider>
+    <NativeBaseProvider>
+      <SafeAreaProvider>
         <StatusBar barStyle="dark-content" />
         <SafeAreaView>
           <ScrollView
@@ -21,12 +22,11 @@ export const App = () => {
             contentInsetAdjustmentBehavior="automatic"
             backgroundColor="gray.100"
           >
+            <Tabs />
             <LocationList />
           </ScrollView>
         </SafeAreaView>
-      </NativeBaseProvider>
-    </SafeAreaProvider>
+      </SafeAreaProvider>
+    </NativeBaseProvider>
   );
 };
-
-export default App;

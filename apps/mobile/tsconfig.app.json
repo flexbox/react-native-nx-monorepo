@@ -10,5 +10,5 @@
     "**/*.spec.tsx",
     "test-setup.ts"
   ],
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "../../libs/shared-ui/src/components/LocationList.tsx", "../../libs/shared-ui/src/components/ListTitle.tsx", "../../libs/shared-ui/src/components/Card.tsx"]
 }

@@ -1,6 +1,7 @@
 # `react-native-nx-monorepo`
 
 - [Getting started with Nx](./docs/nx.md)
+- [Design](./docs/design.md)
 - [FAQ](./docs/faq.md)
 
 ## Tooling
