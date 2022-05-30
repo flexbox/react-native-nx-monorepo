@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "date-fns": "^2.28.0",
     "native-base": "^3.4.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -26,7 +27,8 @@
     "react-native-safe-area-context": "^4.2.5",
     "react-native-web": "^0.17.7",
     "regenerator-runtime": "0.13.7",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "victory-native": "^36.4.1"
   },
   "devDependencies": {
     "@babel/core": "7.12.13",

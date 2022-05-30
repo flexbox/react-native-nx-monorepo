@@ -28,3 +28,7 @@ yarn web:storybook
 
 - [`/mobile`](./apps/mobile) with [https://nx.dev/packages/react-native](https://nx.dev/packages/react-native)
 - [`/web`](./apps/web/) with [https://nx.dev/packages/react](https://nx.dev/packages/react)
+
+## Libs
+
+- [`@react-native-nx-monorepo/shared-ui`](./libs/shared-ui)

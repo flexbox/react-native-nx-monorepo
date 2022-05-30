@@ -4,14 +4,18 @@
   "private": true,
   "dependencies": {
     "@react-native-async-storage/async-storage": "*",
-    "@testing-library/jest-native": "*",
-    "@testing-library/react-native": "*",
     "native-base": "*",
     "react-native-config": "*",
     "react-native-safe-area-context": "*",
     "react-native-svg": "*",
     "react-native": "*",
     "react": "*",
+    "victory-native": "*",
+    "date-fns": "*"
+  },
+  "devDependencies": {
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
     "@storybook/react": "*",
     "@storybook/react-native": "*"
   }
